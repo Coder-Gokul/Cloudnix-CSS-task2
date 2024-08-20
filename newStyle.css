@@ -22,10 +22,10 @@
   --font3: "Poppins", sans-serif;
   --black: black;
   --white: white; */
-  --primary: #7AB2B2;
+  --primary: #173B45;
   --primary-dark: #fff;
   --secondary: #EEF7FF;
-  --bg: #4D869C;
+  --bg: #B43F3F;
   --font1: "Bodoni Moda SC", serif;
   --font2: "Bebas Neue", sans-serif;
   --font3: "Poppins", sans-serif;
@@ -111,8 +111,7 @@ aside {
 aside h4 {
   font-family: var(--font1);
   font-size: 1.2rem;
-  color: var(--black);
-  font-weight: 900;
+  color: var(--white);
 }
 
 main {
