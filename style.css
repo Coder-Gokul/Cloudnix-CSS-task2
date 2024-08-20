@@ -1,22 +1,25 @@
 /* Font import */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Browser Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: var(--font2);
+  letter-spacing: 1px;
 }
 
 /* Global variable */
 :root {
   /* color */
-  --primary: #697565;
-  --primary-dark: #435d3c;
-  --secondary: #f1eee8;
-  --bg: #ecdfcc;
-  --font: "Poppins", sans-serif;
+  --primary: #173B45;
+  --primary-dark: #fff;
+  --secondary: #F8EDED;
+  --bg: #B43F3F;
+  --font1: "Bodoni Moda SC", serif;
+  --font2: "Bebas Neue", sans-serif;
+  --font3: "Poppins", sans-serif;
   --black: black;
   --white: white;
 }
@@ -46,10 +49,14 @@ nav {
   border-bottom: 6px solid var(--primary);
   border-top: 2px solid var(--primary);
   color: var(--primary-dark);
-  margin-top: 10px;
+  position:sticky;
+  top: 0;
+  z-index: 100;
+  opacity: .98;
 }
 
 nav h1 {
+  font-family: var(--font1);
   font-size: 2rem;
   letter-spacing: 2px;
 }
@@ -77,6 +84,8 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* change in alignment of left nav to right  */
+  order: 2;
 }
 main {
   width: 70%;
@@ -90,6 +99,7 @@ aside {
   letter-spacing: 1px;
 }
 aside h4 {
+  font-family: var(--font1);
   font-size: 1.2rem;
 }
 
@@ -112,17 +122,18 @@ main {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  border-left: 5px solid #697565;
+  border-left: 5px solid var(--primary);
   padding-left: 20px;
 }
 
 .year {
   font-size: small;
   color: #697565;
+  opacity: .4;
 }
 
-.tech{
-  width: 243px;
+.tech {
+  width: 194px;
 }
 
 li::marker {
@@ -140,11 +151,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 550px;
 }
 
 .footer_title {
-  font-size: 1.2rem;
+  font-family: var(--font1);  
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -154,9 +166,13 @@ footer {
   text-align: left;
 }
 
-.footer_info span {
+.footer_info span { 
+  font-family: var(--font1);
   font-weight: 600;
   margin-right: 10px;
+}
+.footer_info p{
+  font-family: var(--font3);
 }
 
 /* Responsive Design */
@@ -174,6 +190,7 @@ footer {
   }
   aside {
     width: 100%;
+    order: 0;
     text-align: center;
   }
   main {
@@ -192,8 +209,8 @@ footer {
   .year {
     font-size: 0.5rem;
   }
-  .tech{
-    width: 150px;
+  .tech {
+    width: 133px;
   }
   .footer_title {
     font-size: 0.8rem;
@@ -202,7 +219,7 @@ footer {
     font-size: 0.6rem;
   }
   .list li {
-    border-left: 3px solid #697565;
+    border-left: 3px solid var(--primary);
   }
 }
 
@@ -220,6 +237,7 @@ footer {
   }
   aside {
     width: 100%;
+    order: 0;
     text-align: center;
   }
   aside h4 {
@@ -238,8 +256,8 @@ footer {
   .year {
     font-size: 0.6rem;
   }
-  .tech{
-    width: 180px;
+  .tech {
+    width: 152px;
   }
   .footer_title {
     font-size: 0.9rem;
@@ -268,6 +286,7 @@ footer {
     text-align: center;
     padding: 15px 10px;
     font-size: 1rem;
+    order: 0;
   }
 
   aside h4 {
