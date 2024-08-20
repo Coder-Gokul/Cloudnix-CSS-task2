@@ -13,10 +13,19 @@
 /* Global variable */
 :root {
   /* color */
-  --primary: #173B45;
+  /* --primary: #173B45;
   --primary-dark: #fff;
   --secondary: #F8EDED;
   --bg: #B43F3F;
+  --font1: "Bodoni Moda SC", serif;
+  --font2: "Bebas Neue", sans-serif;
+  --font3: "Poppins", sans-serif;
+  --black: black;
+  --white: white; */
+  --primary: #7AB2B2;
+  --primary-dark: #fff;
+  --secondary: #EEF7FF;
+  --bg: #4D869C;
   --font1: "Bodoni Moda SC", serif;
   --font2: "Bebas Neue", sans-serif;
   --font3: "Poppins", sans-serif;
@@ -52,7 +61,8 @@ nav {
   position:sticky;
   top: 0;
   z-index: 100;
-  opacity: .98;
+  /* opacity: .98; */
+  margin-top: 10px;
 }
 
 nav h1 {
@@ -101,6 +111,8 @@ aside {
 aside h4 {
   font-family: var(--font1);
   font-size: 1.2rem;
+  color: var(--black);
+  font-weight: 900;
 }
 
 main {
@@ -128,8 +140,8 @@ main {
 
 .year {
   font-size: small;
-  color: #697565;
-  opacity: .4;
+  color: var(--primary);
+  /* opacity: .4; */
 }
 
 .tech {
@@ -151,7 +163,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 550px;
+  margin-bottom: 10px;
 }
 
 .footer_title {
