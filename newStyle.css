@@ -34,14 +34,14 @@
 }
 
 /* Header section */
-#mypage-header {
+#mypage_header {
   position: sticky;
   top: 0;
   z-index: 100;
   margin-top: 10px;
 }
 
-#mypage-header nav {
+#mypage_header nav {
   height: 100px;
   background-color: var(--primary-dark);
   display: flex;
@@ -61,18 +61,18 @@
 
 /* middle section */
 
-#middle-section {
+#middle_section {
   display: flex;
   font-size: 1.2rem;
 }
 
-#mypage-leftnav {
+#mypage_leftnav {
   width: 30%;
   /* change in alignment of left nav to right  */
   order: 2;
 }
 
-#mypage-leftnav aside {
+#mypage_leftnav aside {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@
   border: 2px solid black;
 }
 
-#mypage-centercontent {
+#mypage_centerContent {
   width: 70%;
   line-height: 1.6;
   color: var(--primary-dark);
@@ -124,7 +124,7 @@
 
 }
 
-#mypage-centercontent main {
+#mypage_centerContent main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,13 +136,13 @@
   padding: 20px;
 }
 
-.centercontent {
+.center-content {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
 }
 
-.centercontent ul {
+.center-content ul {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -184,7 +184,7 @@
 }
 
 /* Footer section */
-#mypage-footer {
+#mypage_footer {
   background-color: var(--primary-dark);
   padding: 20px;
   border-top: 6px solid var(--primary);
@@ -233,7 +233,7 @@
 
   /* middle section */
 
-  #middle-section {
+  #middle_section {
     margin: 0;
     font-size: 0.7rem;
     margin-bottom: 10px;
@@ -245,11 +245,11 @@
     font-size: 0.8rem;
   }
 
-  #mypage-leftnav {
+  #mypage_leftnav {
     display: none;
   }
 
-  #mypage-centercontent {
+  #mypage_centerContent {
     width: 100%;
   }
 
@@ -262,7 +262,7 @@
     font-size: 0.8rem;
   }
 
-  #mypage-centercontent main {
+  #mypage_centerContent main {
     height: auto;
     margin: 0px;
     margin-top: 10px;
@@ -308,7 +308,7 @@
 
   /* middle section */
 
-  #middle-section {
+  #middle_section {
     margin: 0;
     font-size: 0.9rem;
     margin-bottom: 10px;
@@ -320,11 +320,11 @@
     letter-spacing: .4px;
   }
 
-  #mypage-leftnav {
+  #mypage_leftnav {
     display: none;
   }
 
-  #mypage-centercontent {
+  #mypage_centerContent {
     width: 100%;
   }
 
@@ -336,7 +336,7 @@
     font-size: .95rem;
   }
 
-  #mypage-centercontent main {
+  #mypage_centerContent main {
     height: auto;
     margin: 0px;
     margin-top: 10px;
@@ -372,7 +372,7 @@
   }
 
   /* middle section */
-  #middle-section {
+  #middle_section {
     margin: 0;
     font-size: 1rem;
     margin-bottom: 10px;
@@ -384,11 +384,11 @@
     letter-spacing: .5px;
   }
 
-  #mypage-leftnav {
+  #mypage_leftnav {
     display: none;
   }
 
-  #mypage-centercontent {
+  #mypage_centerContent {
     width: 100%;
   }
 
@@ -396,7 +396,7 @@
     display: block;
   }
 
-  #mypage-centercontent main {
+  #mypage_centerContent main {
     height: auto;
     margin: 0px;
     margin-top: 15px;
@@ -429,7 +429,7 @@
   }
 
   /* middle section */
-  #middle-section {
+  #middle_section {
     font-size: .9rem;
     letter-spacing: .5px;
   }
@@ -443,7 +443,7 @@
     font-size: .9rem;
   }
 
-  .centercontent ul {
+  .center-content ul {
     padding: 0px;
   }
 
